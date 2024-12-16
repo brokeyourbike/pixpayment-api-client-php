@@ -14,5 +14,6 @@ use BrokeYourBike\DataTransferObject\JsonResponse;
 class PayoutResponse extends JsonResponse
 {
     public ?string $status;
+    public ?string $statusDescription;
     public ?string $paymentId;
 }
