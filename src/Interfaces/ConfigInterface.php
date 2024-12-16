@@ -11,6 +11,7 @@ namespace BrokeYourBike\PixPayment\Interfaces;
  */
 interface ConfigInterface
 {
+    public function getAuthUrl(): string;
     public function getUrl(): string;
     public function getClientId(): string;
     public function getClientSecret(): string;

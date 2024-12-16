@@ -80,7 +80,7 @@ class Client implements HttpClientInterface
 
         $response = $this->httpClient->request(
             HttpMethodEnum::POST->value,
-            (string) $this->resolveUriFor(rtrim($this->config->getUrl(), '/'), '/oauth2/token'),
+            (string) $this->resolveUriFor(rtrim($this->config->getAuthUrl(), '/'), '/oauth2/token'),
             $options
         );
 

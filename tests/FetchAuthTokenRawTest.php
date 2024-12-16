@@ -21,7 +21,7 @@ class FetchAuthTokenRawTest extends TestCase
     public function it_can_prepare_request(): void
     {
         $mockedConfig = $this->getMockBuilder(ConfigInterface::class)->getMock();
-        $mockedConfig->method('getUrl')->willReturn('https://example.com/');
+        $mockedConfig->method('getAuthUrl')->willReturn('https://example.com/');
         $mockedConfig->method('getClientId')->willReturn('john');
         $mockedConfig->method('getClientSecret')->willReturn('p@ssword');
 

@@ -13,6 +13,8 @@ use BrokeYourBike\DataTransferObject\JsonResponse;
  */
 class TokenResponse extends JsonResponse
 {
+    public ?string $error;
+    public ?string $error_description;
     public ?string $access_token;
     public ?int $expires_in;
 }
