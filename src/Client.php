@@ -114,7 +114,7 @@ class Client implements HttpClientInterface
 
         $response = $this->httpClient->request(
             HttpMethodEnum::POST->value,
-            (string) $this->resolveUriFor(rtrim($this->config->getUrl(), '/'), '/payment'),
+            (string) $this->resolveUriFor(rtrim($this->config->getUrl(), '/'), '/api/1/payment'),
             $options
         );
 
