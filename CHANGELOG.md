@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.2...v0.1.3) (2024-12-18)
+
+
+### Bug Fixes
+
+* source ([60f3271](https://www.github.com/brokeyourbike/pixpayment-api-client-php/commit/60f3271d080c1f2f7b32b76868f9de2d25ea43d1))
+
 ### [0.1.2](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.1...v0.1.2) (2024-12-16)
 
 
