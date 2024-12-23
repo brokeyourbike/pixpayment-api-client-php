@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.4](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.3...v0.1.4) (2024-12-23)
+
+
+### Bug Fixes
+
+* pass currency ([12ea868](https://www.github.com/brokeyourbike/pixpayment-api-client-php/commit/12ea868007be27701fb5d2a008faa5a126649ac6))
+
 ### [0.1.3](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.2...v0.1.3) (2024-12-18)
 
 
