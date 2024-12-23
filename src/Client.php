@@ -138,7 +138,7 @@ class Client implements HttpClientInterface
 
         $response = $this->httpClient->request(
             HttpMethodEnum::GET->value,
-            (string) $this->resolveUriFor(rtrim($this->config->getUrl(), '/'), "/api/1/status/{$paymentId}"),
+            (string) $this->resolveUriFor(rtrim($this->config->getUrl(), '/'), "/transaction/1/status/{$paymentId}"),
             $options
         );
 
