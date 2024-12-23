@@ -107,8 +107,9 @@ class Client implements HttpClientInterface
                 'partnerCode' => $this->config->getPartnerCode(),
                 'operator' => $transaction->getRecipientProvider(),
                 'amount' => $transaction->getAmount(),
-                'msisdn' => $transaction->getSenderPhone(),
+                'currency' => $transaction->getCurrency(),
                 'country' => $transaction->getSenderCountry(),
+                'msisdn' => $transaction->getSenderPhone(),
                 'transactionType' => 'TRANSFER',
             ],
         ];
