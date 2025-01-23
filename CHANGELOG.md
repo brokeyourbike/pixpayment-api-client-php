@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.5...v0.2.0) (2025-01-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* no sender phone is required
+
+### Bug Fixes
+
+* no sender phone is required ([00a1bc9](https://www.github.com/brokeyourbike/pixpayment-api-client-php/commit/00a1bc9571eeb3b0952bd2bbc836e92aaba1d3ce))
+
 ### [0.1.5](https://www.github.com/brokeyourbike/pixpayment-api-client-php/compare/v0.1.4...v0.1.5) (2024-12-23)
 
 
