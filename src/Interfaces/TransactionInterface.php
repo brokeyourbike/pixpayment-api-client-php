@@ -14,7 +14,6 @@ interface TransactionInterface
     public function getCurrency(): string;
     public function getAmount(): float;
 
-    public function getSenderPhone(): string;
     public function getSenderCountry(): string;
 
     public function getRecipientFirstName(): string;

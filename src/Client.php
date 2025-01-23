@@ -109,7 +109,6 @@ class Client implements HttpClientInterface
                 'amount' => $transaction->getAmount(),
                 'currency' => $transaction->getCurrency(),
                 'country' => $transaction->getSenderCountry(),
-                'msisdn' => $transaction->getSenderPhone(),
                 'transactionType' => 'TRANSFER',
             ],
         ];
