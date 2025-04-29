@@ -15,6 +15,7 @@ enum TransactionStatusEnum: string
     case PENDING = 'Pending';
     case SUCCESSFUL = 'Successful';
     case FAILED = 'Failed';
+    case FAILED_LOW = 'failed';
     case ABORTED = 'Aborted';
     case CANCELLED = 'Cancelled';
 }
