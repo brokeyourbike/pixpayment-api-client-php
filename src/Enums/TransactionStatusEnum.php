@@ -11,6 +11,7 @@ namespace BrokeYourBike\PixPayment\Enums;
  */
 enum TransactionStatusEnum: string
 {
+    case CREATED_LOW = 'created';
     case IN_PROGRESS = 'InProgress';
     case PENDING = 'Pending';
     case SUCCESSFUL = 'Successful';
