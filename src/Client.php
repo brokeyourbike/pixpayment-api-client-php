@@ -79,6 +79,10 @@ class Client implements HttpClientInterface
             ],
         ];
 
+        if ($this->getSourceModel() != null){
+            $options[\BrokeYourBike\HasSourceModel\Enums\RequestOptions::SOURCE_MODEL] = $this->getSourceModel();
+        }
+
         $response = $this->httpClient->request(
             HttpMethodEnum::POST->value,
             (string) $this->resolveUriFor(rtrim($this->config->getAuthUrl(), '/'), '/oauth2/token'),
@@ -113,8 +117,8 @@ class Client implements HttpClientInterface
             ],
         ];
 
-        if ($transaction instanceof SourceModelInterface){
-            $options[\BrokeYourBike\HasSourceModel\Enums\RequestOptions::SOURCE_MODEL] = $transaction;
+        if ($this->getSourceModel() != null){
+            $options[\BrokeYourBike\HasSourceModel\Enums\RequestOptions::SOURCE_MODEL] = $this->getSourceModel();
         }
 
         $response = $this->httpClient->request(
@@ -134,6 +138,10 @@ class Client implements HttpClientInterface
                 'Authorization' => "Bearer {$this->getAuthToken()}",
             ],
         ];
+
+        if ($this->getSourceModel() != null){
+            $options[\BrokeYourBike\HasSourceModel\Enums\RequestOptions::SOURCE_MODEL] = $this->getSourceModel();
+        }
 
         $response = $this->httpClient->request(
             HttpMethodEnum::GET->value,
